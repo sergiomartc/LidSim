@@ -48,9 +48,6 @@ The program also allows you to load a lidar directly from a file, by going into 
 
 Once a lidar has been loaded into memory, a scenario can be loaded for recording.
 
-<p align="center">
-  <img src="https://github.com/smceron/LidSim/blob/master/images/logos/scenario_parameters.png" />
-</p>
 
 A scenario is defined as an object following a certain trajectory:
 - The object must be a triangulated mesh in stl format, such as the one included as an [example](https://github.com/smceron/LidSim/blob/master/data/B2.stl).
