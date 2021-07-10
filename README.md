@@ -12,8 +12,8 @@
 The primary aim of the program is to be able to simulate the response of a certain lidar under a specific condition, and therefore knowing beforehand what could be expected of the data it would return. This way, it is possible to make a more informed decision on what lidar model would be best suited for a specific application, without the need to perform these costly tests in the real world and with a real model. Currently, there exists no widely available tool for performing physics-based lidar simulations, and this is specially true in flight test operations, which is what this program is trying to simulate.
 
 <p align="center">
-  <img src="https://github.com/smceron/LidSim/blob/master/images/logos/example.gif" width="350" />
-  <img src="https://github.com/smceron/LidSim/blob/master/images/logos/example-scanning.gif" width="350" />
+  <img src="https://github.com/smceron/LidSim/blob/master/images/logos/example.gif" width="370" />
+  <img src="https://github.com/smceron/LidSim/blob/master/images/logos/example-scanning.gif" width="370" />
 </p>
 
 In these example gifs, a [B-2 stealth bomber](https://en.wikipedia.org/wiki/Northrop_Grumman_B-2_Spirit) can be seen performing some simulated maneuvers, with the trajectory that its center of mass follows being shown as the yellow sphere. The pointcloud that the simulated lidar generates are the series of red points that appear on the surface of the aircraft, while the trajectory that the simulator is able to detect from these points is represented by the yellow square. The way this trajectory is computed is by calculating the centroid of the point cloud for every frame, as the program does not support any complex tracking algorithms as of yet. The black square represents where the simulated lidar is placed: at the origin and aiming towards the x axis. The animation of the left is from simulating a flash lidar, while the one on the right comes from simulating a scanning lidar.
