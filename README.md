@@ -76,6 +76,6 @@ These buttons have the following functionality:
 
 These files are saved by default under _savefiles_, that is generated under the [_src_](https://github.com/smceron/LidSim/tree/master/src) directory, but this directory can be changed under _Options > Change save folder_.
 
-### Final note on the code
+## Final note on the code
 
 The code included is well commented with every algorithmic implementation being well explained. It is recommended to run the program in Python 3.9, as other versions have shown some incompatibility with the _vtk_ library. A copy of the environment used when developing the program is included under the _bin_ folder.
