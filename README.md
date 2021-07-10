@@ -40,7 +40,7 @@ These parameters include:
   - Horizontal and vertical FOV (field of view): extent of the simulation that is seen at any given moment by the lidar.
   - Frame rate: number of frames a second that the lidar is able to record, can also be seen as the refresh rate.
 
-The field of view and angular resolution parameters define the upper bound in the total number of points that the lidar is able to generate. Once these values have been defined, it is possible to load the lidar into memory by clicking on _Load lidar_. With a lidar model loaded, it is now possible to proceed to the _Scenario_ sector of the GUI.
+The field of view and angular resolution parameters define the upper bound of the total number of points that the lidar is able to generate. Once these values have been defined, it is possible to load the lidar into memory by clicking on _Load lidar_. With a lidar model loaded, it is now possible to proceed to the _Scenario_ sector of the GUI.
 
 The program also allows you to load a lidar directly from a file, by going into _Options > Change lidar file_ and selecting a json file [with the appropriate formatting] (https://github.com/smceron/LidSim/blob/master/data/lidar_models.json), as well as saving a loaded lidar into the specified lidar file. The two lidars defined in this file were the ones used to generate the animations above.
 
