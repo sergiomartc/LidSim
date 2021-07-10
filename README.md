@@ -58,7 +58,7 @@ A scenario is defined as an object following a certain trajectory:
 
 ### Camera parameters
 
-These allow you to set the animation FPS, initial camera elevation and azimuth, and whether to hide the axis and show the lidar as a black box at the origin or not. The camera bounding parameters allow you to focus the view over a certain space of interest, although the axis will always default to a square with its side being the biggest range provided. All these parameters can either be modified or left to default values.
+These allow you to set the animation FPS, initial camera elevation and azimuth, and whether to hide the axis and show the lidar as a black box at the origin or not. The camera bounding parameters allow you to focus the view over a certain space of interest, although the axes will always default to a square with its side being the biggest range provided. All these parameters can either be modified or left to default values.
 
 ### Launching and saving 
 
@@ -70,12 +70,12 @@ Once both the lidar and the scenario have been loaded, it is possible to simulat
 
 These buttons have the following functionality:
 - Launch animation: launches a 3D matplotlib interactive animation, that lets you change the camera position.
-- Launch charts: generating charts about the real vs detected trajectories over time, as well as the error in the detected trajectory.
+- Launch charts: generating charts with the real vs detected trajectories over time, as well as the error in the detected trajectory over time.
 - Save animation: letting you save the generated animation into an .mp4 file with the provided filename, or defaulting to a time stamped one.
 - Save trajectory: letting you save both the real and detected trajectory into an .csv file with the provided filename, or defaulting to a time stamped one.
 
 These files are saved by default under _savefiles_, that is generated under the [_src_](https://github.com/smceron/LidSim/tree/master/src) directory, but this directory can be changed under _Options > Change save folder_.
 
-### Finalote on the code
+### Final note on the code
 
-The code is well commented with every algorithmic implementation being well explained. It is recommended to run the program in Python 3.9, as other versions have shown some incompatibility with the _vtk_ library. A copy of the environment used when developing the program is included under the _bin_ folder.
+The code included is well commented with every algorithmic implementation being well explained. It is recommended to run the program in Python 3.9, as other versions have shown some incompatibility with the _vtk_ library. A copy of the environment used when developing the program is included under the _bin_ folder.
