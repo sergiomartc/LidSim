@@ -4,7 +4,7 @@
 **LidSim** is a lidar point cloud gathering and visualization simulator. It supports both flash and scanning lidar technologies, accounting for both angular and range errors, and is capable of simulating point clouds of moving objects. The program also incorporates some basic tracking capabilities, while also allowing for machine learning models to be added in the future to the underlying code.
 
 <p align="center">
-  <img src="https://github.com/smceron/LidSim/blob/master/images/logos/gui.jpg" />
+  <img src="https://github.com/smceron/LidSim/blob/master/images/logos/gui_screenshot.jpg" />
 </p>
 
 ## Reasoning behind the software development
