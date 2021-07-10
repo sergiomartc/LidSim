@@ -232,8 +232,8 @@ class GUI(QMainWindow, Ui_MainWindow):
         # Camera bounding parameters have predefined values that are set when the lidar is loaded
         self.lineEdit_boundxmin.setText("0")
         self.lineEdit_boundxmax.setText(str(maxrange))
-        self.lineEdit_boundymin.setText(str(maxrange/2))
-        self.lineEdit_boundymax.setText(str(-maxrange/2))
+        self.lineEdit_boundymin.setText(str(-maxrange/2))
+        self.lineEdit_boundymax.setText(str(maxrange/2))
         self.lineEdit_boundzmin.setText(str(-maxrange/2))
         self.lineEdit_boundzmax.setText(str(maxrange/2))
 
@@ -402,8 +402,8 @@ class GUI(QMainWindow, Ui_MainWindow):
             "showLidar": self.show_lidar,
             "xmin": float(self.lineEdit_boundxmin.text()),
             "xmax": float(self.lineEdit_boundxmax.text()),
-            "ymin": float(self.lineEdit_boundymin.text()),
-            "ymax": float(self.lineEdit_boundymax.text()),
+            "ymin": -float(self.lineEdit_boundymin.text()),
+            "ymax": -float(self.lineEdit_boundymax.text()),
             "zmin": float(self.lineEdit_boundzmin.text()),
             "zmax": float(self.lineEdit_boundzmax.text()),
         }
@@ -448,6 +448,9 @@ class GUI(QMainWindow, Ui_MainWindow):
     def save_animation(self):
         """Saves the generated animation under the specified file or a default one"""
 
+        # Loads a new animation instance
+        self.load_animation()
+
         # Check if the directory exists beforehand, create it if not
         if not os.path.exists(self.save_directory):
             os.mkdir(self.save_directory)
@@ -467,7 +470,7 @@ class GUI(QMainWindow, Ui_MainWindow):
 
         # Saves this new animation
         self.label_Status.setText('Status: saving animation')
-        self.recorder.save_animation(params['FPS'], path)
+        self.recorder.save_animation(int(self.lineEdit_animationFPS.text()), path)
         self.label_Status.setText('Status: ')
 
     def save_trajectory(self):
