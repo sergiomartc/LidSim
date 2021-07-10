@@ -35,7 +35,7 @@ These parameters include:
   - Standard deviation: models the error that the lidar has when measuring radial distances from it.
 - Angular parameters:
   - Horizontal and vertical resolution: minimum discernible angular difference that the lidar is able to detect, can also be seen as an angular step.
-  - Horizontala and vertical accuracy: errors in these resolutions, modelled as a standard deviation.
+  - Horizontal and vertical accuracy: errors in these resolutions, modelled as a standard deviation.
 - Coverage parameters:
   - Horizontal and vertical FOV (field of view): extent of the simulation that is seen at any given moment by the lidar.
   - Frame rate: number of frames a second that the lidar is able to record, can also be seen as the refresh rate.
