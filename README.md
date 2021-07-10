@@ -53,12 +53,12 @@ Once a lidar has been loaded into memory, a scenario can be loaded for recording
 </p>
 
 A scenario is defined as an object following a certain trajectory:
-- The object must be a triangulated mesh in stl format, such as the one included as an [example](https://github.com/smceron/LidSim/blob/master/data/B2.stl).
-- The trajectory is defined by a csv file containing the timestamp, position (_x_, _y_, _z_) and orientation (_ψ_, _θ_, _φ_) of the object, following the Tait-Bryan angle convention, as can be seen in the [example file provided](https://github.com/smceron/LidSim/blob/master/data/trajectory.txt).
+- The object must be a triangulated mesh in stl format, such as the one used for the [example](https://github.com/smceron/LidSim/blob/master/data/B2.stl).
+- The trajectory is defined by a csv file containing the timestamp, position (_x_, _y_, _z_) and orientation (_ψ_, _θ_, _φ_) of the object, following the Tait-Bryan angle convention, such as the one used for the [example](https://github.com/smceron/LidSim/blob/master/data/trajectory.txt).
 
 ### Camera parameters
 
-These allow you to set the animation FPS, initial camera elevation and azimuth, and whether to hide the axis and show the lidar as a black box at the origin or not. The camera bounding parameters allow you to focus the view over a certain space of interest, although the axes will always default to a square with its side being the biggest range provided. All these parameters can either be modified or left to default values.
+These allow you to set the animation FPS, initial camera elevation and azimuth, and whether to hide the axis and show the lidar as a black box at the origin or not. The camera bounding parameters allow you to focus the view over a certain space of interest, although the axes will always default to a square with its side being the biggest range provided. All these parameters can either be modified or left to default values. For the example videos above, the _elevation_ parameter was set to 30 degrees.
 
 ### Launching and saving 
 
