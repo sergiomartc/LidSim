@@ -1,4 +1,5 @@
 {
+ 
  "model1": {
   "lidarKind": "flash",
   "lidarRange": {
@@ -13,7 +14,8 @@
     }, 
     "accuracy": {
       "horizontal": 0.15, 
-      "vertical": 0.15}
+      "vertical": 0.15
+    }
   }, 
   "lidarFOV": {
     "horizontal": 100, 
@@ -21,13 +23,15 @@
   }, 
   "lidarFPS": 5
  }, 
+ 
  "model2": {
    "lidarKind": "scanning", 
    "lidarRange": {
      "minimum": 0, 
      "maximum": 300, 
      "standardDeviation": 0.1
-   }, "lidarAngular": {
+   }, 
+  "lidarAngular": {
      "resolution": {
        "horizontal": 1, 
        "vertical": 1
@@ -41,5 +45,7 @@
      "horizontal": 100, 
      "vertical": 30
    }, 
-   "lidarFPS": 5}
+   "lidarFPS": 5
+ }
+ 
 }
