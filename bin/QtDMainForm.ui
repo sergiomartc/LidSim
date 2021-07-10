@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>494</width>
+    <height>637</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>LidSim</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../images/lidarsimicon.png</normaloff>../../images/lidarsimicon.png</iconset>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>true</bool>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowNestedDocks|QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks|QMainWindow::GroupedDragging</set>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0" rowspan="2">
+     <widget class="QGroupBox" name="groupBox_1">
+      <property name="title">
+       <string>Lidar</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="1">
+          <widget class="QComboBox" name="comboBox_SelectedPredeterminedLidar">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="maxVisibleItems">
+            <number>3</number>
+           </property>
+           <property name="insertPolicy">
+            <enum>QComboBox::NoInsert</enum>
+           </property>
+           <property name="minimumContentsLength">
+            <number>7</number>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>Lidar model:</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <item>
+          <widget class="QLabel" name="label_11">
+           <property name="text">
+            <string>Name:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_lidarName"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_13">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Kind:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_lidarKind">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <item>
+            <property name="text">
+             <string>flash</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>scanning</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_17">
+         <property name="text">
+          <string>Range parameters (m):</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_18">
+         <item>
+          <widget class="QLabel" name="label_19">
+           <property name="text">
+            <string>Minimum:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_minRange"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_21">
+           <property name="text">
+            <string>Maximum:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_maxRange"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_22">
+           <property name="text">
+            <string>Standard deviation:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_rangeSTD"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_42">
+         <property name="text">
+          <string>Angular parameters (degrees):</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_34">
+         <item>
+          <widget class="QLabel" name="label_47">
+           <property name="text">
+            <string>Horizontal resolution:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_horizontalResolution"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_48">
+           <property name="text">
+            <string>Vertical resolution:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_verticalResolution"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_35">
+         <item>
+          <widget class="QLabel" name="label_49">
+           <property name="text">
+            <string>Horizontal accuracy:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_horizontalAccuracy"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_50">
+           <property name="text">
+            <string>Vertical accuracy:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_verticalAccuracy"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_43">
+         <property name="text">
+          <string>Coverage parameters:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_36">
+         <item>
+          <widget class="QLabel" name="label_46">
+           <property name="text">
+            <string>Horizontal FOV:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_horizontalFOV">
+           <property name="cursorPosition">
+            <number>0</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_52">
+           <property name="text">
+            <string>Vertical FOV:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_verticalFOV"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_53">
+           <property name="text">
+            <string>Frame rate:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_lidarFPS">
+           <property name="maximumSize">
+            <size>
+             <width>16777213</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="cursorPosition">
+            <number>0</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_42">
+         <item>
+          <widget class="QPushButton" name="pushButton_loadLidarConfig">
+           <property name="cursor">
+            <cursorShape>ArrowCursor</cursorShape>
+           </property>
+           <property name="toolTipDuration">
+            <number>0</number>
+           </property>
+           <property name="text">
+            <string>Load lidar</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../MyJabberFiles/c82328@airbus.com/images/resources_icons.qrc">
+             <normaloff>:/main/icons/Coquette_icon_set/png/32x32/green_arrow_down.png</normaloff>:/main/icons/Coquette_icon_set/png/32x32/green_arrow_down.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_saveLidarConfig">
+           <property name="toolTipDuration">
+            <number>0</number>
+           </property>
+           <property name="text">
+            <string>Save lidar</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../MyJabberFiles/c82328@airbus.com/images/resources_icons.qrc">
+             <normaloff>:/main/icons/Coquette_icon_set/png/32x32/save.png</normaloff>:/main/icons/Coquette_icon_set/png/32x32/save.png</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="contextMenuPolicy">
+       <enum>Qt::NoContextMenu</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget#groupBox{
+border: 1px solid; 
+border-radius: 1px;
+
+}</string>
+      </property>
+      <property name="title">
+       <string>Scenario</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_17">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>Object file:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_objectFile"/>
+         </item>
+         <item>
+          <widget class="QToolButton" name="toolButton_ChangeObjectFile">
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_12">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Trajectory file:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_trajectoryFile"/>
+         </item>
+         <item>
+          <widget class="QToolButton" name="toolButton_ChangeTrajectoryFile">
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_44">
+         <property name="text">
+          <string>Camera parameters and bounding:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_33">
+         <item>
+          <widget class="QLabel" name="label_20">
+           <property name="text">
+            <string>FPS:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_animationFPS"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_45">
+           <property name="text">
+            <string>Elevation:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_animationElevation"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_51">
+           <property name="text">
+            <string>Azimuth:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_animationAzimuth"/>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_animationHideAxis">
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>Hide axis</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_animationShowLidar">
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>Show lidar</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_58">
+         <property name="text">
+          <string>Camera bounding (m):</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_37">
+         <item>
+          <widget class="QLabel" name="label_23">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;x&lt;span style=&quot; vertical-align:sub;&quot;&gt;min&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_boundxmin"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_25">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;y&lt;span style=&quot; vertical-align:sub;&quot;&gt;min&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_boundymin"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_27">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;z&lt;span style=&quot; vertical-align:sub;&quot;&gt;min&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_boundzmin"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_40">
+         <item>
+          <widget class="QLabel" name="label_24">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;x&lt;span style=&quot; vertical-align:sub;&quot;&gt;max&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_boundxmax"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_26">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;y&lt;span style=&quot; vertical-align:sub;&quot;&gt;max&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_boundymax"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_28">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;z&lt;span style=&quot; vertical-align:sub;&quot;&gt;max&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_boundzmax"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_39">
+         <item>
+          <widget class="QPushButton" name="pushButton_loadScenario">
+           <property name="toolTipDuration">
+            <number>0</number>
+           </property>
+           <property name="text">
+            <string>Load scenario</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../MyJabberFiles/c82328@airbus.com/images/resources_icons.qrc">
+             <normaloff>:/main/icons/Coquette_icon_set/png/32x32/green_arrow_down.png</normaloff>:/main/icons/Coquette_icon_set/png/32x32/green_arrow_down.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_launchAnimation">
+           <property name="text">
+            <string>Launch animation</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../MyJabberFiles/c82328@airbus.com/images/resources_icons.qrc">
+             <normaloff>:/main/icons/main/view_3D.png</normaloff>:/main/icons/main/view_3D.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_launchCharts">
+           <property name="toolTipDuration">
+            <number>0</number>
+           </property>
+           <property name="text">
+            <string>Launch charts</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../MyJabberFiles/c82328@airbus.com/images/resources_icons.qrc">
+             <normaloff>:/main/icons/main/target.png</normaloff>:/main/icons/main/target.png</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_38">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_saveAnimationFilename">
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="placeholderText">
+            <string>filename</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_saveAnimation">
+           <property name="toolTipDuration">
+            <number>0</number>
+           </property>
+           <property name="text">
+            <string>Save animation</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../MyJabberFiles/c82328@airbus.com/images/resources_icons.qrc">
+             <normaloff>:/main/icons/Coquette_icon_set/png/32x32/save.png</normaloff>:/main/icons/Coquette_icon_set/png/32x32/save.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_saveTrajectoryFilename">
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="placeholderText">
+            <string>filename</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_saveTrajectory">
+           <property name="toolTipDuration">
+            <number>0</number>
+           </property>
+           <property name="text">
+            <string>Save trajectory</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../MyJabberFiles/c82328@airbus.com/images/resources_icons.qrc">
+             <normaloff>:/main/icons/Coquette_icon_set/png/32x32/save.png</normaloff>:/main/icons/Coquette_icon_set/png/32x32/save.png</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_Status">
+      <property name="lineWidth">
+       <number>17</number>
+      </property>
+      <property name="text">
+       <string>Status: </string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>494</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuJobs">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <addaction name="actionChange_lidar_file"/>
+    <addaction name="actionChange_save_folder"/>
+    <addaction name="separator"/>
+    <addaction name="actionViewing_parameters"/>
+   </widget>
+   <addaction name="menuJobs"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionEdit_List">
+   <property name="icon">
+    <iconset resource="../../../MyJabberFiles/c82328@airbus.com/images/resources_icons.qrc">
+     <normaloff>:/main/icons/Coquette_icon_set/png/32x32/save.png</normaloff>:/main/icons/Coquette_icon_set/png/32x32/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save Session</string>
+   </property>
+  </action>
+  <action name="actionLaunch">
+   <property name="text">
+    <string>Launch</string>
+   </property>
+  </action>
+  <action name="actionLaunch_List">
+   <property name="icon">
+    <iconset resource="../../../MyJabberFiles/c82328@airbus.com/images/resources_icons.qrc">
+     <normaloff>:/main/icons/main/next.png</normaloff>:/main/icons/main/next.png</iconset>
+   </property>
+   <property name="text">
+    <string>Launch Session</string>
+   </property>
+  </action>
+  <action name="actionEdit_Job">
+   <property name="text">
+    <string>New Job</string>
+   </property>
+  </action>
+  <action name="actionLaunch_Job">
+   <property name="text">
+    <string>Launch Job</string>
+   </property>
+  </action>
+  <action name="actionTemplate_Path">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Template Path</string>
+   </property>
+  </action>
+  <action name="actionShow_Hide_Video_Window">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Show/Hide Video Window</string>
+   </property>
+  </action>
+  <action name="actionlocal_mode">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>local dataserver mode</string>
+   </property>
+  </action>
+  <action name="actionNew_Session">
+   <property name="text">
+    <string>New Session...</string>
+   </property>
+   <property name="iconText">
+    <string>New Session...</string>
+   </property>
+   <property name="toolTip">
+    <string>New Session...</string>
+   </property>
+  </action>
+  <action name="actionOpen_Session">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../../MyJabberFiles/c82328@airbus.com/images/resources_icons.qrc">
+     <normaloff>:/main/icons/Coquette_icon_set/png/32x32/green_arrow_down.png</normaloff>:/main/icons/Coquette_icon_set/png/32x32/green_arrow_down.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open Session</string>
+   </property>
+  </action>
+  <action name="actionSave_Session_As">
+   <property name="icon">
+    <iconset resource="../../../MyJabberFiles/c82328@airbus.com/images/resources_icons.qrc">
+     <normaloff>:/main/icons/Coquette_icon_set/png/32x32/save.png</normaloff>:/main/icons/Coquette_icon_set/png/32x32/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save Session As...</string>
+   </property>
+   <property name="iconText">
+    <string>Save Session As...</string>
+   </property>
+   <property name="toolTip">
+    <string>Save Session As...</string>
+   </property>
+  </action>
+  <action name="actionPath_Root">
+   <property name="text">
+    <string>Path Root</string>
+   </property>
+  </action>
+  <action name="actionSession_Manager">
+   <property name="text">
+    <string>Session Manager</string>
+   </property>
+  </action>
+  <action name="actionChange_lidar_file">
+   <property name="text">
+    <string>Change lidar file</string>
+   </property>
+  </action>
+  <action name="actionChange_save_folder">
+   <property name="text">
+    <string>Change save folder</string>
+   </property>
+  </action>
+  <action name="actionViewing_parameters">
+   <property name="text">
+    <string>Viewing parameters</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>comboBox_SelectedPredeterminedLidar</tabstop>
+  <tabstop>lineEdit_objectFile</tabstop>
+  <tabstop>toolButton_ChangeObjectFile</tabstop>
+  <tabstop>lineEdit_trajectoryFile</tabstop>
+  <tabstop>toolButton_ChangeTrajectoryFile</tabstop>
+  <tabstop>lineEdit_lidarName</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../../../MyJabberFiles/c82328@airbus.com/images/resources_icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
