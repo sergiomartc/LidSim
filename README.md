@@ -54,7 +54,7 @@ Once a lidar has been loaded into memory, a scenario can be loaded for recording
 
 A scenario is defined as an object following a certain trajectory:
 - The object must be a triangulated mesh in stl format, such as the one used for the [example](https://github.com/smceron/LidSim/blob/master/data/B2.stl).
-- The trajectory is defined by a csv file containing the timestamp, position (_x_, _y_, _z_) and orientation (_ψ_, _θ_, _φ_) of the object, following the Tait-Bryan angle convention, such as the one used for the [example](https://github.com/smceron/LidSim/blob/master/data/trajectory.txt).
+- The trajectory is defined by a csv file containing the timestamp, position (_x_, _y_, _z_) and orientation (_ψ_, _θ_, _φ_) of the object, following the [Tait-Bryan angle convention](https://en.wikipedia.org/wiki/Euler_angles#Tait%E2%80%93Bryan_angles), such as the one used for the [example](https://github.com/smceron/LidSim/blob/master/data/trajectory.txt).
 
 ### Camera parameters
 
