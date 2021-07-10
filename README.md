@@ -78,4 +78,4 @@ These files are saved by default under _savefiles_, that is generated under the 
 
 ## Final note on the code
 
-The code included is well commented with every algorithmic implementation being well explained. It is recommended to run the program in Python 3.9, as other versions have shown some incompatibility with the _vtk_ library. A copy of the environment used when developing the program is included under the _bin_ folder.
+The code included is well commented with every algorithmic implementation being well explained. It is recommended to run the program in Python 3.9, as other versions have shown some incompatibility with the _vtk_ library. 
