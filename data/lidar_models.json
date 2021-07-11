@@ -9,8 +9,8 @@
   }, 
   "lidarAngular": {
     "resolution": {
-      "horizontal": 1, 
-      "vertical": 1
+      "horizontal": 0.5, 
+      "vertical": 0.5
     }, 
     "accuracy": {
       "horizontal": 0.15, 
@@ -21,7 +21,7 @@
     "horizontal": 100, 
     "vertical": 30
   }, 
-  "lidarFPS": 5
+  "lidarFPS": 10
  }, 
  
  "model2": {
@@ -33,8 +33,8 @@
    }, 
   "lidarAngular": {
      "resolution": {
-       "horizontal": 1, 
-       "vertical": 1
+       "horizontal": 0.5, 
+       "vertical": 0.5
      }, 
      "accuracy": {
        "horizontal": 0.15,
@@ -45,7 +45,7 @@
      "horizontal": 100, 
      "vertical": 30
    }, 
-   "lidarFPS": 5
+   "lidarFPS": 10
  }
  
 }
