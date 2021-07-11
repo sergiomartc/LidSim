@@ -58,7 +58,7 @@ A scenario is defined as an object following a certain trajectory:
 
 ### Camera parameters
 
-These allow you to set the animation FPS, initial camera elevation and azimuth, and whether to hide the axis and show the lidar as a black box at the origin or not. The camera bounding parameters allow you to focus the view over a certain space of interest, although the axes will always default to a square with its side being the biggest range provided. All these parameters can either be modified or left to default values. For the example videos above, the _elevation_ parameter was set to 30 degrees.
+These allow you to set the animation FPS, initial camera elevation and azimuth, and whether to hide the axis and show the lidar as a black box at the origin or not. The camera bounding parameters allow you to focus the view over a certain space of interest, although the axes will always default to a square with its side being the biggest range provided. All these parameters can either be modified or left to default values. For the example videos above, the _elevation_ parameter was set to 30 degrees, and the _Show lidar_ box clicked.
 
 ### Launching and saving 
 
