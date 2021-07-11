@@ -20,7 +20,7 @@ In these example gifs, a [B-2 stealth bomber](https://en.wikipedia.org/wiki/Nort
 
 ## Performing a simulation
 
-### Defnining a lidar
+### Definining a lidar
 
 To generate this video, a lidar must first be defined by setting its parameters under the _Lidar_ part of the GUI. 
 
