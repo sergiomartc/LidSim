@@ -9,7 +9,7 @@
 
 ## Reasoning behind the software development
 
-The primary aim of the program is to be able to simulate the response of a certain lidar under a specific condition, and therefore knowing beforehand what could be expected of the data it would return. This way, it is possible to make a more informed decision on what lidar model would be best suited for a specific application, without the need to perform these costly tests in the real world and with a real model. Currently, there exists no widely available tool for performing physics-based lidar simulations, and this is specially true in flight test operations, which is what this program is trying to simulate.
+The primary aim of the program is to be able to simulate the response of a certain lidar under a specific condition, and therefore knowing beforehand what could be expected of the data it would return. This way, it is possible to make a more informed decision on what lidar model would be best suited for a specific application, without the need to perform these costly tests in the real world and with a real model. Currently, there exists no tool for performing physics-based lidar simulations that allow for the six degrees of freedom of an object.
 
 <p align="center">
   <img src="https://github.com/smceron/LidSim/blob/master/images/logos/b2_flash.gif" width="380" />
